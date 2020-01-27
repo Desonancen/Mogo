@@ -11,6 +11,7 @@ body {
     background-color: #fff;
 }
 
+
 .visually-hidden {
     position: absolute;
     clip:rect(0 0 0 0);
@@ -57,9 +58,9 @@ ul {
 .site-navigator {
     font-family: 'Montserrat', sans-serif;
     margin-top:10px;
-    
+    font-size: 14px;
    display:flex;
-   margin-left:330px;
+   margin-left:400px;
 }
 
 .site-navigator li>a {
@@ -67,29 +68,39 @@ ul {
     color:#fff;
     text-transform: uppercase;
     transition: color .2s linear;
-    font-weight: 700;
 }
 
 .site-navigator li>a:hover {
     color:#fce38a;
+    border-bottom: 2px solid #fce38a ;
 }
 
 .main-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.title {
     font-size: 150px;
     line-height: 140px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
-    margin-left: 230px;
-    
+    letter-spacing: 8px;
+    margin:0 auto;
 }
 
-.main-text p {
-   margin:0;
-   max-width: 700px;
+.title::after {
+    content: "";
+        display:block;
+        height: 5px;
+        width: 60px;
+        background-color:#fff;
+        margin:50px auto;
 }
 
-.creative{
+.subtitle{
     font-size: 72px;
     line-height: 24px;
     font-weight: 400;
@@ -104,4 +115,54 @@ ul {
 
 .search-panel li {
     margin: 0 21px;
+}
+
+.btn {
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border:2px #fff solid;
+    padding:5px 15px;
+}
+
+.btn:hover {
+    color:#000;
+    background-color: #fff;
+}
+
+.slider {
+    margin-top:110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-item {
+    border-top: 2px solid #fff;
+    width:280px;
+    opacity:0.7;
+    position: relative;
+}
+
+.slide-menu {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.number {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.slide-item.active {
+    opacity:1;
+}
+
+.slide-item.active:before{
+    content:"";
+    position: absolute;
+    width:70px;
+    background-color:#f38181;
+    height: 2px;
+    top:-2px;
 }
