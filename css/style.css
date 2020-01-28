@@ -94,7 +94,7 @@ ul {
 .title::after {
     content: "";
         display:block;
-        height: 5px;
+        height: 3px;
         width: 60px;
         background-color:#fff;
         margin:50px auto;
@@ -165,4 +165,84 @@ ul {
     background-color:#f38181;
     height: 2px;
     top:-2px;
+}
+
+.sections {
+    color:#000;
+    padding-top:90px;
+    text-align: center;
+}
+
+.sections__subtitle {
+    font-size: 24px;
+       font-family: 'Kaushan Script', cursive;
+}
+
+.sections__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+}
+
+.sections__title:after {
+    content: "";
+        display:block;
+        height: 3px;
+        width: 60px;
+        background-color:#f38181;
+        margin:40px auto;
+}
+
+.sections__description {
+    max-width: 960px;
+    margin: 0 auto;
+    opacity: .6;
+    margin-bottom: 100px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.photos__item {
+    width:380px;
+    height: 250px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.photos__item:hover .photos__wrap img {
+    opacity:.1;
+}
+
+.photos__item:hover .photos__text {
+opacity: 1;
+}
+
+.photos__item:hover .photos__wrap {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.photos__wrap {
+   background: linear-gradient(to bottom, #fce38a, #f38181);
+   transition: transform .1s linear;
+}
+
+.photos__wrap img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.photos__text {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    opacity:0;
 }
