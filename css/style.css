@@ -163,7 +163,7 @@ ul {
     position: absolute;
     width:70px;
     background-color:#f38181;
-    height: 2px;
+    height: 3px;
     top:-2px;
 }
 
@@ -171,6 +171,7 @@ ul {
     color:#000;
     padding-top:90px;
     text-align: center;
+    margin-bottom: 110px;
 }
 
 .sections__subtitle {
@@ -245,4 +246,70 @@ opacity: 1;
     position: absolute;
     top:50%;
     opacity:0;
+}
+
+.accomplishments {
+    background-color: #95e1d3;
+    
+}
+
+.accomplishments__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accomplishments__item {
+    padding:95px 60px 67px 60px;
+    text-transform: uppercase;
+    border-left:1px solid #b5eae0;
+    max-width: 170px;
+    text-align: center;
+}
+
+.accomplishments__item p {
+    margin-top: 25px;
+}
+
+.numbers {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.ourskills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__text {
+    max-width:279px;
+    margin-left:90px;
+    text-align: left;
+}
+
+.skill__img {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+}
+
+.skill {
+    position: relative;
+}
+
+.skill__title {
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.skill__description {
+    opacity:0.4;
+}
+
+.border {
+    display: block;
+    height: 1px;
+    border:0;
+    margin:40px 0;
+    background-color:#e5e5e5;
+    width:1200px;
 }
